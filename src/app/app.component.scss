@@ -1,0 +1,30 @@
+main {
+  text-align: center;
+  position: relative;
+}
+
+.navbar {
+  background-color: rgba(41, 156, 236, 1);
+  // padding: 15px 0;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar-link {
+    display: inline-block;
+    padding: 15px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .navbar-link:hover {
+    background-color: #1b80c4;
+  }
+}
