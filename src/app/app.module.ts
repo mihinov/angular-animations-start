@@ -3,17 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutPageComponent } from './about-page/about-page.component';
-import { LeftPageComponent } from './left-page/left-page.component';
-import { RightPageComponent } from './right-page/right-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OpenCloseComponent } from './open-close/open-close.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutPageComponent,
-    LeftPageComponent,
-    RightPageComponent
+    OpenCloseComponent
   ],
   imports: [
     BrowserModule,
