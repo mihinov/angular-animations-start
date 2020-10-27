@@ -7,14 +7,13 @@
 
 </form>
 
-<div class="list__container">
+<div class="list__container" [@itemAnimation]="items.length">
   <div class="list__title">
     Items:
   </div>
   <div
     class="list__item"
     *ngFor="let item of items"
-    [@itemAnimation]="items.length"
   >
     {{ item }}
   </div>

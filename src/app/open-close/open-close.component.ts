@@ -17,13 +17,8 @@ export class OpenCloseComponent implements OnInit {
   form: FormGroup = new FormGroup({
     list_text: new FormControl('This is America')
   });
-  isOpen = true;
   number = 10;
   items: string[];
-
-  toggle(): void {
-    this.isOpen = !this.isOpen;
-  }
 
   modifyNumber(n: number): void {
     this.number += n;
