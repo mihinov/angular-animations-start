@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { itemAnimation } from './animation';
+import { itemAnimation } from './open-close.animation';
 
 @Component({
   selector: 'app-open-close',
