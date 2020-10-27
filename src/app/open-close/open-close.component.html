@@ -1,5 +1,8 @@
-<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
-  <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+<div class="list__container">
+  <div class="list__item" *ngFor="let item of items">
+    {{ item }}
+  </div>
+  <form id="form">
+    <input type="text" class="form-control">
+  </form>
 </div>
-
-<div class="btn" (click)="toggle()">Кнопка</div>
