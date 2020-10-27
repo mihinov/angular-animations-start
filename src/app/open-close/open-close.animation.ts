@@ -22,7 +22,7 @@ export const itemAnimation = trigger('itemAnimation', [
             style({ opacity: 0.5, transform: 'translateY(50%)', offset: 0.3 }),
             style({ opacity: 1, transform: 'translateY(0)', offset: 0 }),
         ])),
-      ])
+      ]), {optional: true}
     ),
   ]),
 ]);
