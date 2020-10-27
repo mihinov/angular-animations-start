@@ -1,8 +1,21 @@
+<form id="form" [formGroup]="form">
+  <input type="text" class="form-control" formControlName="list_text">
+  <div class="form-group">
+    <input type="button" class="btn btn-primary" value="Добавить" (click)="addItem()">
+    <input type="button" class="btn btn-danger" value="Удалить" (click)="removeItem()">
+  </div>
+
+</form>
+
 <div class="list__container">
-  <div class="list__item" *ngFor="let item of items">
+  <div class="list__title">
+    Items:
+  </div>
+  <div
+    class="list__item"
+    *ngFor="let item of items"
+    [@itemAnimation]="items.length"
+  >
     {{ item }}
   </div>
-  <form id="form">
-    <input type="text" class="form-control">
-  </form>
 </div>
