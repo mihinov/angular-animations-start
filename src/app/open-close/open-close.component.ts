@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { itemAnimation } from './open-close.animation';
+import { itemAnimation, explainerAnim } from './open-close.animation';
 
 @Component({
   selector: 'app-open-close',
   templateUrl: './open-close.component.html',
   styleUrls: ['./open-close.component.scss'],
   animations: [
-    itemAnimation
+    itemAnimation,
+    explainerAnim
   ]
 })
 export class OpenCloseComponent implements OnInit {

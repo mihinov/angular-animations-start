@@ -1,20 +1,34 @@
-<form id="form" [formGroup]="form" *ngIf="items.length !== 0">
-  <input type="text" class="form-control" formControlName="list_text">
-  <div class="form-group">
-    <input type="button" class="btn btn-primary" value="Добавить" (click)="addItem()">
-    <input type="button" class="btn btn-danger" value="Удалить" (click)="removeItem()">
-  </div>
+<div class="formAndListContainer">
+  <form id="form" [formGroup]="form">
+    <input type="text" class="form-control" formControlName="list_text">
+    <div class="form-group">
+      <input type="button" class="btn btn-primary" value="Добавить" (click)="addItem()">
+      <input type="button" class="btn btn-danger" value="Удалить" (click)="removeItem()">
+    </div>
 
-</form>
+  </form>
 
-<div class="list__container" [@itemAnimation]="items.length">
-  <div class="list__title">
-    Items:
+  <div class="list__container" [@itemAnimation]="items.length">
+    <div class="list__title">
+      Items:
+    </div>
+    <div class="list__items">
+      <div class="list__item" *ngFor="let item of items">
+        {{ item }}
+      </div>
+    </div>
+
   </div>
-  <div
-    class="list__item"
-    *ngFor="let item of items"
-  >
-    {{ item }}
+</div>
+
+<div @explainerAnim class="explainerAnim">
+  <div class="col">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, recusandae!</p>
+  </div>
+  <div class="col">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, recusandae!</p>
+  </div>
+  <div class="col">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, recusandae!</p>
   </div>
 </div>

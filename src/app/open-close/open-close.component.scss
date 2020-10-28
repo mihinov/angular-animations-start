@@ -1,12 +1,25 @@
+$size: 15px;
+
 :host {
   display: block;
+}
+
+.formAndListContainer {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px 0;
 }
 
+.explainerAnim {
+  display: flex;
+}
+
+:host > * + * {
+  margin-top: $size + 30px;
+}
+
 .list__container {
-  padding: 15px;
+  padding: $size;
   border: 2px solid black;
 
   .list__item {
@@ -16,7 +29,11 @@
 }
 
 .list__container > * + * {
-  margin-top: 10px;
+  margin-top: $size;
+}
+
+.list__items > * + * {
+  margin-top: $size;
 }
 
 #form {
@@ -24,5 +41,5 @@
 }
 
 #form .form-group > * + * {
-  margin-left: 10px;
+  margin-left: $size;
 }
