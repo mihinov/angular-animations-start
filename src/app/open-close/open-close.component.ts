@@ -17,12 +17,7 @@ export class OpenCloseComponent implements OnInit {
   form: FormGroup = new FormGroup({
     list_text: new FormControl('This is America')
   });
-  number = 10;
   items: string[];
-
-  modifyNumber(n: number): void {
-    this.number += n;
-  }
 
   ngOnInit(): void {
 
